@@ -1,0 +1,257 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins, sans-serif;
+}
+
+body {
+  background-color: #f1f1f1;
+}
+
+.header {
+  height: 100vh;
+
+  .navbar{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 30px;
+    box-shadow: 0px 1px 10px #999;
+  
+    .logo {
+      cursor: pointer;
+    }
+  
+    .links a {
+      text-decoration: none;
+      color: black;
+      font-weight: 600;
+      margin: 10px;
+      transition: .4s;
+
+      a:first-of-type{
+        color: #999;
+      }
+  
+      &:hover{
+        font-size: 20px;
+      }
+    }
+  }
+  .container {
+    margin-top: 82px;
+    .together {
+      display: flex;
+      gap: 50px;
+      justify-content: center;
+      align-items: center;
+  
+  
+      .text {
+        width: 500px;
+        height: 208px;
+        margin-bottom: 20px;
+  
+        h1 {
+          cursor: pointer;
+          width: 482px;
+          line-height: 66px;
+          font-weight: 600;
+        }
+  
+        p {
+          cursor: pointer;
+          line-height: 28px;
+        }
+      }
+  
+      .img-div img{
+        margin-bottom: 20px;
+        cursor: pointer;
+        width: 494px;
+        height: 613px;
+      }
+    }
+  }
+}
+
+
+
+.about {
+  background-color: #ffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: 400px;
+  padding-top: 20px;
+  display: flex;
+
+  .card {
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin: 20px;
+
+    img {
+      width: 370px;
+      height: 228px;
+    }
+  }
+}
+
+.cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 700px;
+
+  .name {
+    margin: 20px;
+    font-size: 24px;
+    color: black;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  img{
+    width: 930px;
+    height: 500px;
+  }
+
+  a {
+    margin-top: 20px;
+    color: black;
+    transition: 0.4s;
+    &:hover {
+      color: #002bff;
+      font-size: 17px;
+    }
+  }
+}
+
+.footer {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+
+  .text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    h1 {
+      cursor: pointer;
+
+      margin: 10px;
+    }
+    .ftp {
+      cursor: pointer;
+
+      text-align: center;
+      width: 296px;
+      margin: 10px;
+      color: black;
+    }
+
+    /* From Uiverse.io by GetYourCode8605 */
+    .glow-on-hover {
+      width: 220px;
+      height: 50px;
+      border: none;
+      outline: none;
+      color: #fff;
+      background: rgb(17, 17, 17);
+      cursor: pointer;
+      position: relative;
+      z-index: 0;
+      border-radius: 10px;
+      font-weight: 600;
+    }
+
+    .glow-on-hover:before {
+      content: "";
+      background: linear-gradient(
+        45deg,
+        #ff0000,
+        #ff7300,
+        #fffb00,
+        #48ff00,
+        #00ffd5,
+        #002bff,
+        #7a00ff,
+        #ff00c8,
+        #ff0000
+      );
+      position: absolute;
+      top: -2px;
+      left: -2px;
+      background-size: 400%;
+      z-index: -1;
+      filter: blur(5px);
+      width: calc(100% + 4px);
+      height: calc(100% + 4px);
+      animation: glowing_54134 20s linear infinite;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+      border-radius: 10px;
+    }
+
+    .glow-on-hover:active {
+      color: #000;
+    }
+
+    .glow-on-hover:active:after {
+      background: transparent;
+    }
+
+    .glow-on-hover:hover:before {
+      opacity: 1;
+    }
+
+    .glow-on-hover:after {
+      z-index: -1;
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: #111;
+      left: 0;
+      top: 0;
+      border-radius: 10px;
+    }
+
+    @keyframes glowing_54134 {
+      0% {
+        background-position: 0 0;
+      }
+
+      50% {
+        background-position: 400% 0;
+      }
+
+      100% {
+        background-position: 0 0;
+      }
+    }
+  }
+  img {
+    cursor: pointer;
+    margin: 30px;
+  }
+  p {
+    cursor: pointer;
+    height: 42px;
+    margin: 10px;
+    text-align: center;
+  }
+}
